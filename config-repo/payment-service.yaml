@@ -1,0 +1,24 @@
+# ============================================
+# PAYMENT SERVICE CONFIGURATION
+# ============================================
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+
+  flyway:
+    enabled: true
+
+server:
+  port: 8082
+
+midtrans:
+  server-key: ${MIDTRANS_SERVER_KEY}
+  client-key: ${MIDTRANS_CLIENT_KEY}
+  is-production: false
+  api-url: https://api.sandbox.midtrans.com
+
+logging:
+  level:
+    com.yukdonation.payment: DEBUG

@@ -1,0 +1,19 @@
+# ============================================
+# DONATION SERVICE - DOCKER PROFILE
+# ============================================
+spring:
+  datasource:
+    url: jdbc:postgresql://donation-db:5432/donationdb
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+
+payment:
+  service:
+    url: http://payment-service:8082
+
+logging:
+  level:
+    com.yukdonation.donation: DEBUG

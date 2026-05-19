@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://gateway-db:5432/gatewaydb
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+
+payment:
+  service:
+    url: http://payment-service:8082
+
+donation:
+  service:
+    url: http://donation-service:8081

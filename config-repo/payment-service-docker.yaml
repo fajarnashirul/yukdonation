@@ -1,0 +1,21 @@
+# ============================================
+# PAYMENT SERVICE - DOCKER PROFILE
+# ============================================
+spring:
+  datasource:
+    url: jdbc:postgresql://payment-db:5432/paymentdb
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+  jpa:
+    hibernate:
+      ddl-auto: validate
+      show-sql: false
+  flyway:
+    enabled: true
+
+logging:
+  level:
+    com.yukdonation.payment: DEBUG

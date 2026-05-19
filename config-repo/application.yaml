@@ -1,0 +1,24 @@
+# ============================================
+# SHARED CONFIGURATION
+# ============================================
+# These settings apply to ALL services
+
+eureka:
+  client:
+    enabled: false  # We'll add Eureka later
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,refresh
+  endpoint:
+    refresh:
+      enabled: true
+    health:
+      show-details: always
+
+logging:
+  level:
+    org.springframework.web: INFO
+    org.hibernate: WARN

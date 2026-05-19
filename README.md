@@ -18,6 +18,6 @@ Microservices-based donation platform for Zakat, Sadaqah, Waqf, Qurbani, and Gen
 ```bash
 git clone --recurse-submodules https://github.com/fajarnashirul/yukdonation.git
 cd yukdonation
-cp .env.example .env  # Add your Midtrans keys
+cp .env.example .env  # Add your Midtrans keys and database config
 docker-compose up --build -d
 ```
