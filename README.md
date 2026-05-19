@@ -1,4 +1,4 @@
-# SedekahKu - Donation Platform
+# yukdonation - Donation Platform
 
 Microservices-based donation platform for Zakat, Sadaqah, Waqf, Qurbani, and General donations.
 
@@ -16,7 +16,7 @@ Microservices-based donation platform for Zakat, Sadaqah, Waqf, Qurbani, and Gen
 ## Quick Start
 
 ```bash
-git clone --recurse-submodules https://github.com/YOUR_USERNAME/yukdonation.git
+git clone --recurse-submodules https://github.com/fajarnashirul/yukdonation.git
 cd yukdonation
 cp .env.example .env  # Add your Midtrans keys
 docker-compose up --build -d
