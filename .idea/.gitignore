@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+.env
+.idea/
+*.iml
+.DS_Store
+*.log
+docker-compose.override.yml
