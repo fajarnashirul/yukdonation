@@ -1,0 +1,12 @@
+[submodule "config-server"]
+	path = config-server
+	url = https://github.com/fajarnashirul/yukdonation-config-server.git
+[submodule "api-gateway"]
+	path = api-gateway
+	url = https://github.com/fajarnashirul/yukdonation-api-gateway.git
+[submodule "donation-service"]
+	path = donation-service
+	url = https://github.com/fajarnashirul/yukdonation-donation-service.git
+[submodule "payment-service"]
+	path = payment-service
+	url = https://github.com/fajarnashirul/yukdonation-payment-service.git
